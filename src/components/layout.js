@@ -4,30 +4,17 @@ import { StaticQuery, graphql } from "gatsby"
 
 import GlobalStyles from './globalStyles'
 import MainHeader from "./mainHeader"
+import MainFooter from './mainFooter';
 
 const Layout = ({ children }) => (
   <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
+    query={pageQuery}
     render={data => (
       <>
         <GlobalStyles />
-        <MainHeader siteTitle={data.site.siteMetadata.title} />
-        <div>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
+        <MainHeader />
+        <main>{children}</main>
+        <MainFooter socialMediaLinks={data.site.siteMetadata.socialMediaLinks} />
       </>
     )}
   />
@@ -36,5 +23,19 @@ const Layout = ({ children }) => (
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+const pageQuery = graphql`
+  query LayoutIndexQuery {
+    site {
+      siteMetadata {
+        title,
+        socialMediaLinks {
+          name
+          url
+        }
+      }
+    }
+  }
+`
 
 export default Layout
