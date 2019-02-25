@@ -12,7 +12,7 @@ const style = css`
     padding: 1rem;
     width: 80%;
 
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       max-width: 346px;
     }
 
@@ -70,7 +70,7 @@ const style = css`
       margin-bottom: 0;
       list-style: none;
 
-      @media (min-width: 768px) {
+      @media (min-width: 576px) {
         justify-content: center;
       }
 

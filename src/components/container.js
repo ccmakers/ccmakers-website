@@ -2,13 +2,14 @@ import React from 'react'
 import { css } from '@emotion/core'
 
 const style = css`
-  width: 100%;
+  display: block;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 
   @media (min-width: 576px) {
+    width: 100%;
     max-width: 540px;
   }
 

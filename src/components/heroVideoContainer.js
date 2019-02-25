@@ -7,11 +7,11 @@ const style = css`
   height: 56.25vw;
   overflow: hidden;
 
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     height: 40vw;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     height: 30vw;
   }
 
@@ -22,7 +22,7 @@ const style = css`
     height: 56.25vw;
     z-index: 1;
 
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       top: -10vw;
     }
   }

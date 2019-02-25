@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: 'Cape Cod Makers',
@@ -42,7 +46,24 @@ module.exports = {
           families: ['Source Sans Pro:300,300i,400,400i,700,700i', 'Droid Serif:300,300i,400,400i,700,700i']
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-meetup`,
+      options: {
+        // Learn about environment variables: https://gatsby.app/env-vars
+        // Your Meetup.com API key can be retrieved here: https://secure.meetup.com/fr-FR/meetup_api/key/
+        key: process.env.MEETUP_API_KEY,
+        fields: 'featured_photo',
+        // Mandatory: the URL name of a Meetup Group.
+        // See the URL of the group page, e.g. https://www.meetup.com/fr-FR/jamstack-paris
+        groupUrlName: "cape-cod-makers",
+        // Optional parameters for retrieving Events, see full documentation at
+        // https://www.meetup.com/meetup_api/docs/:urlname/events/?uri=%2Fmeetup_api%2Fdocs%2F%3Aurlname%2Fevents%2F#list
+        status: "upcoming,past",
+        desc: "true",
+        page: 6
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
