@@ -89,6 +89,9 @@ module.exports = {
         }
       }
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-meetup`,
       options: {
@@ -106,9 +109,6 @@ module.exports = {
         page: 6
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-catch-links`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
