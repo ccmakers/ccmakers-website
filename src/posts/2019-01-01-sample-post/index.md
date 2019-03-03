@@ -2,7 +2,7 @@
 slug: "/2019-01-01-sample-post"
 date: 2019-01-01
 title: "Sample Post"
-summary: "Eiusmod consequat sint quis minim ea pariatur aute nostrud sunt non irure. Voluptate nulla nisi cupidatat do aute labore officia adipisicing proident ipsum. Nisi laboris nulla esse excepteur irure nisi occaecat ut tempor tempor magna magna non aliquip. Fugiat elit aliquip do nulla veniam non."
+summary: "Eiusmod consequat sint quis minim ea pariatur aute nostrud sunt non irure. Voluptate nulla nisi cupidatat do aute labore officia adipisicing proident ipsum."
 ---
 
 # h1 Heading

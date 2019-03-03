@@ -2,8 +2,8 @@
 title: "Arduino Basics Class Starting February 27th"
 slug: "/2019-02-16-arduino-basics-class-february-27"
 date: 2019-02-16
-summary: "Join Cape Cod Makers for a 6 week class designed to get you started making your own electronic gadgets using the mighty Arduino microprocessor. This class is targeted at people with limited to no experience with electronics."
-cover_image: "./arduino.jpg"
+summary: "Join Cape Cod Makers for a 6 week class designed to get you started making your own electronic gadgets using the mighty Arduino microprocessor."
+coverPicture: "./arduino.jpg"
 tags:
   - Class
   - Arduino

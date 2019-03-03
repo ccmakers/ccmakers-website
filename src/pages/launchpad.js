@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IntroPageHero from "../components/introPageHero"
 import CardGrid from "../components/cardGrid";
+import Callout from "../components/callout";
+import { Link } from "gatsby"
 
 const featurets = [
   {
@@ -45,6 +47,11 @@ const LaunchPadPage = () => (
       introText="The Launchpad, at the Harwich Cultural Center is a makerspace and a collaborative workspace where people can learn to use computers and tools such as soldering irons, 3D printers, laser cutters and more to design and make almost anything."
     />
     <CardGrid gridItems={featurets} />
+    <Callout
+      title="Come and visit us!"
+      text="If you're interested, please visit us during one of our monthly open house events. We will give you a tour, answer your questions, and introduce you to some of our members. If you decide to pursue a membership, we'll give you a membership application form to take home and fill out."
+      link={<Link to="/events">Check out our events</Link>}
+    />
   </Layout>
 )
 

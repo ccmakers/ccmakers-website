@@ -43,7 +43,9 @@ const IntroPageHero = ({ title, introText}) => {
     <Container>
       <div css={style}>
         <h1>{title}</h1>
-        <p>{introText}</p>
+        <p dangerouslySetInnerHTML={{
+          __html: introText
+        }} />
       </div>
     </Container>
   )

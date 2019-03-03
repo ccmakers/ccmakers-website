@@ -1,6 +1,8 @@
 import React from 'react'
 import { css } from '@emotion/core'
 
+import fallBackImage from '../images/cape-makers-things.png';
+
 const style = css`
   margin-bottom: 1.5rem;
   display: flex;
@@ -36,6 +38,10 @@ const style = css`
     @media (min-width: 992px) {
       font-size: 1.1rem;
     }
+
+    time {
+      display: block;
+    }
   }
 `
 
@@ -51,9 +57,13 @@ const EventCard = ({
   console.log(venue);
   return (
     <div css={style}>
-      {featured_photo && (
+      {featured_photo ? (
         <a className="event-cover" href={link} target="_blank" rel="noopener noreferrer">
           <img src={featured_photo.photo_link} alt={`${name} Event`} />
+        </a>
+      ) : (
+        <a className="event-cover" href={link} target="_blank" rel="noopener noreferrer">
+          <img src={fallBackImage} alt={`${name} Event`} />
         </a>
       )}
       <div className="event-content">

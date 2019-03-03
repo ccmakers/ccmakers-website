@@ -74,7 +74,7 @@ export const query = graphql`
         slug
         summary
         tags
-        cover_image {
+        coverPicture {
           publicURL
           childImageSharp {
             sizes(maxWidth: 1240 ) {
