@@ -1,6 +1,6 @@
 ---
-slug: "/2019-01-01-sample-post"
-date: 2019-01-01
+slug: "/2018-01-01-sample-post"
+date: 2018-01-01
 title: "Sample Post"
 summary: "Eiusmod consequat sint quis minim ea pariatur aute nostrud sunt non irure. Voluptate nulla nisi cupidatat do aute labore officia adipisicing proident ipsum."
 ---
