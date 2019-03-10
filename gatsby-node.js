@@ -16,15 +16,18 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `).then(results => {
+
       results.data.allMarkdownRemark.edges.forEach(({node}) => {
+        const { slug } = node.frontmatter
         createPage({
-          path: `/blog${node.frontmatter.slug}`,
+          path: `/blog${slug}`,
           component: path.resolve('./src/components/post.js'),
           context: {
-            slug: node.frontmatter.slug,
+            slug: slug,
           }
         });
       })
+
       resolve();
     })
   });

@@ -128,6 +128,10 @@ const MainHeader = () => {
           </li>
 
           <li>
+            <Link to='/support' activeClassName="active">Support</Link>
+          </li>
+
+          <li>
             <Link to='/blog' activeClassName="active">Blog</Link>
           </li>
 
