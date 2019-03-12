@@ -1,9 +1,9 @@
 - id: rodrigo-passos
   name: Rodrigo Passos
   github: webrgp
-  twitter: webrgp
   website: https://hellodative.com
   pic: ./rodrigo-passos.jpg
 
 - id: jim-sullivan
   name: Jim Sullivan
+  pic: ./jim-sullivan.jpg

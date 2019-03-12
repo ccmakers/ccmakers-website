@@ -22,7 +22,7 @@ const style = css`
     line-height: 1.2;
 
     @media (min-width: 992px) {
-      font-size: 4.5rem;
+      font-size: 4rem;
       font-weight: 300;
       line-height: 1;
     }

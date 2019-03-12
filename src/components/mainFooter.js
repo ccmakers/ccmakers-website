@@ -2,10 +2,9 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import Container from './container'
-const thisYear = new Date().getFullYear();
 
 const style = css`
-  padding: 1rem 0;
+  padding: 2rem 0;
   border-top: 2px solid #0093D0;
   font-family: 'Open Sans', sans-serif;
   .wrapper {
@@ -68,7 +67,7 @@ const MainFooter = ({ socialMediaLinks }) => {
       <Container>
         <div className="wrapper">
           <div className="copy">
-            Copyright &copy; {thisYear} Cape Cod Makers, Inc.
+            Copyright &copy; {new Date().getFullYear()} Cape Cod Makers, Inc.
           </div>
           <ul className="social">
             { socialMediaLinks && socialMediaLinks.map( link => (

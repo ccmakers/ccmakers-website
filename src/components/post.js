@@ -5,23 +5,17 @@ import { css } from '@emotion/core'
 import Layout from './layout';
 import SEO from "./seo"
 import Container from './container';
+import PostHeader from './postHeader';
 
 const style = css`
   max-width: 800px;
   margin: 1.5rem auto;
 
-  header {
-    text-align: center;
-
-    h1 {
-      font-weight: 300;
-      margin: 0;
-      font-size: 40px;
-    }
-  }
-
   .cover-picture {
-
+    img {
+      max-width: 100%;
+      margin: 1rem auto;
+    }
   }
 
   .post-content {
@@ -72,13 +66,7 @@ class Post extends Component {
         />
         <Container>
           <article css={style}>
-            <header>
-              <h1>{frontmatter.title}</h1>
-              <time dateTime={new Date(frontmatter.date).toISOString()}>{new Intl.DateTimeFormat('en-US', {
-                year: 'numeric', month: 'long', day: 'numeric',
-                timeZone: 'America/New_York'
-              }).format(new Date(frontmatter.date))}</time>
-            </header>
+            <PostHeader post={frontmatter} />
 
             {frontmatter.coverPicture !== null && (
               <picture className="cover-picture">
@@ -115,12 +103,11 @@ export const query = graphql`
           id
           name
           github
-          twitter
           website
           pic {
             childImageSharp {
-              fixed(width: 800, height: 600 ) {
-                src
+              fixed(width: 30, height: 30 ) {
+                ...GatsbyImageSharpFixed
               }
             }
           }

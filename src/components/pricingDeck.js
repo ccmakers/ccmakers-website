@@ -91,6 +91,7 @@ const style = css`
           border-radius: .3rem;
           background-color: #0093D0;
           color: #fff;
+          font-family: "Open Sans";
 
           transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
