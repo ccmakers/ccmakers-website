@@ -16,11 +16,38 @@ const style = css`
     h1 {
       font-weight: 300;
       margin: 0;
+      font-size: 40px;
     }
   }
 
   .cover-picture {
 
+  }
+
+  .post-content {
+    max-width: 740px;
+    margin: 0 auto;
+
+    font-size: 20px;
+
+    p {
+      margin: 25px 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Open Sans";
+      font-weight: 300;
+      margin-bottom: 20px !important;
+    }
   }
 
   .gatsby-highlight {
@@ -60,7 +87,7 @@ class Post extends Component {
             )}
 
 
-            <div dangerouslySetInnerHTML={{
+            <div className="post-content" dangerouslySetInnerHTML={{
               __html: html
             }} />
           </article>

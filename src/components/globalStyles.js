@@ -11,7 +11,7 @@ const GlobalStyles = () => {
 
       body {
         margin: 0;
-        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 0.9375rem;
         font-weight: 400;
         line-height: 1.5;
@@ -31,6 +31,14 @@ const GlobalStyles = () => {
       h1 {
         font-size: 2em;
         margin: 0.67em 0;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      p, ul, li, a {
+        font-family: 'Lora', serif;
       }
 
       hr {

@@ -93,6 +93,7 @@ const style = css`
 
         a {
           color: inherit;
+          font-family: 'Open Sans', sans-serif;
 
           &:hover {
             text-decoration: none;

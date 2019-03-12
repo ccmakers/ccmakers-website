@@ -92,7 +92,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Source Sans Pro:300,300i,400,400i,700,700i', 'Droid Serif:300,300i,400,400i,700,700i']
+          families: ['Open Sans:300,300i,400,400i,700,700i', 'Lora:300,300i,400,400i,700,700i']
         }
       }
     },
