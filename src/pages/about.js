@@ -7,6 +7,7 @@ import Container from "../components/container";
 import IntroPageHero from "../components/introPageHero";
 import RichText from "../components/richText";
 import Callout from "../components/callout";
+import { graphql } from 'gatsby'
 
 const AboutPage = (props) => (
   <Layout>

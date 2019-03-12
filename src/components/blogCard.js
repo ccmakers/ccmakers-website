@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 import { css } from '@emotion/core'
 import fallBackImage from '../images/cape-makers-things.png';
 
@@ -55,23 +56,23 @@ const BlogCard = ({
   summary,
   coverPicture
 }) => {
-  console.log(coverPicture);
+  console.log(slug);
   return (
     <div css={style}>
       {coverPicture ? (
-        <a className="blog-cover" href={`/blog${slug}`} target="_blank" rel="noopener noreferrer">
+        <Link className="blog-cover" to={`/blog${slug}`}>
           <img src={coverPicture.childImageSharp.fixed.src} alt={`${title}`} />
-        </a>
+        </Link>
       ) : (
-        <a className="blog-cover" href={`/blog${slug}`} target="_blank" rel="noopener noreferrer">
+        <Link className="blog-cover" to={`/blog${slug}`}>
           <img src={fallBackImage} alt={`${title}`} />
-        </a>
+        </Link>
       )}
       <div className="blog-content">
-        <a href={`/blog${slug}`} target="_blank" rel="noopener noreferrer"><h3>{title}</h3></a>
+        <Link to={`/blog${slug}`}><h3>{title}</h3></Link>
         <time>{date}</time>
         <p>{summary}</p>
-        <a className="button" href={`/blog${slug}`} target="_blank" rel="noopener noreferrer">View More</a>
+        <Link className="button" to={`/blog${slug}`}>View More</Link>
       </div>
     </div>
   )

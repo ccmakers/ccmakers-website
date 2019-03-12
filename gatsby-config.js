@@ -111,13 +111,16 @@ module.exports = {
         groupUrlName: "cape-cod-makers",
         // Optional parameters for retrieving Events, see full documentation at
         // https://www.meetup.com/meetup_api/docs/:urlname/events/?uri=%2Fmeetup_api%2Fdocs%2F%3Aurlname%2Fevents%2F#list
-        status: "upcoming,past",
-        desc: "true",
-        page: 6
+        status: "upcoming",
+        desc: "false",
+        page: 100
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
+  mapping: {
+    "MarkdownRemark.frontmatter.author": `AuthorsYaml.id`,
+  },
 }

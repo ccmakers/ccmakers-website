@@ -84,7 +84,20 @@ export const query = graphql`
         title
         date
         slug
-        author
+        author {
+          id
+          name
+          github
+          twitter
+          website
+          pic {
+            childImageSharp {
+              fixed(width: 800, height: 600 ) {
+                src
+              }
+            }
+          }
+        }
         summary
         tags
         coverPicture {
