@@ -19,6 +19,10 @@ const style = css`
     }
   }
 
+  .cover-picture {
+
+  }
+
   .gatsby-highlight {
     pre {
       background-color: rgba(0, 147, 208, 0.2);
@@ -48,6 +52,14 @@ class Post extends Component {
                 timeZone: 'America/New_York'
               }).format(new Date(frontmatter.date))}</time>
             </header>
+
+            {frontmatter.coverPicture !== null && (
+              <picture className="cover-picture">
+                <img src={frontmatter.coverPicture.childImageSharp.fixed.src} alt={`${frontmatter.title}`} />
+              </picture>
+            )}
+
+
             <div dangerouslySetInnerHTML={{
               __html: html
             }} />
@@ -72,13 +84,14 @@ export const query = graphql`
         title
         date
         slug
+        author
         summary
         tags
         coverPicture {
           publicURL
           childImageSharp {
-            sizes(maxWidth: 1240 ) {
-              srcSet
+            fixed(width: 800, height: 600 ) {
+              src
             }
           }
         }
