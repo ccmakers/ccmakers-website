@@ -43,7 +43,7 @@ const postsQuery = graphql`
             coverPicture {
               publicURL
               childImageSharp {
-                fixed(width: 600, height: 338 ) {
+                fixed(width: 800, height: 600 ) {
                   src
                 }
               }

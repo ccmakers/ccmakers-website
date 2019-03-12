@@ -3,7 +3,7 @@ title: "Cape Cod Makers Launchpad November News"
 slug: "/2018-11-24-Cape-Cod-Makers-Newsletter"
 date: 2018-11-24
 summary: "Join Cape Cod Makers for a 6 week class designed to get you started making your own electronic gadgets using the mighty Arduino microprocessor."
-coverPicture: "./cart.png"
+coverPicture: "./cover.jpg"
 tags:
   - Newletter
   - LaunchPad
@@ -15,7 +15,7 @@ The cold weather really seemed to increase productivity at the MakerSpace. This 
 
 ![cart](./cart.png)
 
- 
+
 
 Jesse did a respin on his LegController design and we were able to reflow solder the new card in the toaster oven with no problems. The new design uses more surface mounted components and adds some capacitors to reduce signal noise.
 
@@ -25,7 +25,7 @@ In November we hosted a special Meetup to learn about the great work being done 
 
 
 ![product](./product.jpg)
- 
+
 
 Jim also worked on his 3D print of Lincoln’s hand in a plastic doped with bronze powder. The hand design comes straight from the Smithsonian and is based on a 3D scan of the original plaster cast taken from before Lincoln’s inauguration. The hand print took a few tries as the metal doped plastic is not the easiest to use but the final print is incredible. We also learned just how big Lincoln really was
 

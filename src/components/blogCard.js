@@ -60,7 +60,7 @@ const BlogCard = ({
     <div css={style}>
       {coverPicture ? (
         <a className="blog-cover" href={`/blog${slug}`} target="_blank" rel="noopener noreferrer">
-          <img src={coverPicture.publicURL} alt={`${title}`} />
+          <img src={coverPicture.childImageSharp.fixed.src} alt={`${title}`} />
         </a>
       ) : (
         <a className="blog-cover" href={`/blog${slug}`} target="_blank" rel="noopener noreferrer">
