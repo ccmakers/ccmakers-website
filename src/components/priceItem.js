@@ -4,9 +4,8 @@ import { css } from '@emotion/core'
 const style = css`
   position: relative;
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
-  min-width: 0;
-  max-width: 350px;
   margin: 0 auto 2rem;
   word-wrap: break-word;
   background-color: #fff;
@@ -15,6 +14,16 @@ const style = css`
   border-radius: .25rem;
   box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
   text-align: center;
+
+  @media (min-width: 768px) {
+    flex: 0 1 auto;
+    margin: 0 0 2rem;
+    width: 350px;
+  }
+
+  @media (min-width: 992px) {
+    width: 450px;
+  }
 
   header {
     padding: .75rem 1.25rem;

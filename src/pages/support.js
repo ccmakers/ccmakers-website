@@ -41,11 +41,13 @@ const SupportPage = (props) => (
         title="Gold Partner"
         yearlyPrice="10,000"
         benefits={[
-          'Huge Company name and logo on our Wall of Gratitude',
-          'Company logo with hyperlink on Web Site',
+          'Huge Company name and logo on our Wall of Gratitude ',
+          'Company logo with hyperlink on Web Site ',
           'Company logo displayed at public events external to our facility',
           'Speaking opportunity at one of our public events',
           'Invitation to attend select members only events',
+          'Supporting memberships for up to 10 employees',
+          'Sponsor Maker class for kids 12+'
         ]}
       />
 
@@ -53,11 +55,15 @@ const SupportPage = (props) => (
         title="Platinum"
         yearlyPrice="25,000"
         benefits={[
+          'Name one of our shop areas . ie (ACME 3D print Lab)',
+          'A complimentary customized private training, testing or team building program in our facility',
           'Huge Company name and logo on our Wall of Gratitude',
           'Company logo with hyperlink on Web Site',
           'Company logo displayed at public events external to our facility',
           'Speaking opportunity at one of our public events',
           'Invitation to attend select members only events',
+          'Supporting memberships for up to 10 employees',
+          'Sponsor Maker class for kids 12+'
         ]}
       />
     </PricingDeck>

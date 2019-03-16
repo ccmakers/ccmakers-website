@@ -10,9 +10,13 @@ const style = css`
     margin: 1rem auto;
     max-width: 800px;
 
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       flex-flow: row wrap;
-      justify-content: center;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 960px;
     }
   }
 `

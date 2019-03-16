@@ -40,7 +40,7 @@ export default AboutPage
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "membership-picture.png" }) {
+    imageOne: file(relativePath: { eq: "membership-picture.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid
