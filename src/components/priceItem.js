@@ -6,7 +6,8 @@ const style = css`
   display: flex;
   flex-direction: column;
   min-width: 0;
-  margin: 0 auto;
+  max-width: 350px;
+  margin: 0 auto 2rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -32,12 +33,14 @@ const style = css`
 
   .card-body {
     flex: 1 1 auto;
+    background-color: #e8f7fe;
 
     h2 {
       font-size: 2.5rem;
-      margin-bottom: .75rem;
+      margin-bottom: 0;
       margin-top: 0;
       padding: 1.25rem;
+      background-color: #fff;
 
       small {
         font-size: 80%;
@@ -104,10 +107,12 @@ const PriceItem = ({
         </header>
       )}
       <div className="card-body">
-        { yearlyPrice && monthlyPrice && (
+        { yearlyPrice && (
           <h2>
             ${yearlyPrice} <small>/ year</small>
-            <span>or ${monthlyPrice} / month</span>
+            {monthlyPrice && (
+              <span>or ${monthlyPrice} / month</span>
+            )}
           </h2>
         )}
         {benefits && benefits.length > 0 && (
