@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IntroPageHero from "../components/introPageHero";
 import PricingDeck from "../components/pricingDeck";
+import PriceItem from "../components/priceItem";
 import { Link } from "gatsby"
 import Callout from "../components/callout";
 
@@ -13,7 +14,20 @@ const MembershipPage = () => (
       title="Membership"
       introText="Want to get connected to our community and support our mission at the same time?<br><strong>Join the Cape Cod Makers today!</strong>"
     />
-    <PricingDeck />
+    <PricingDeck>
+      <PriceItem
+        title="Supporting Member"
+        yearlyPrice={100}
+        monthlyPrice={10}
+        benefits={[
+          'Access to the LaunchPad when accompanied by a full-time member',
+          'Full access to the Cape Cod Makers Slack group',
+          'Early Access to Class & Event Registration',
+          'Discounted Class & Event Fees',
+        ]}
+        link={<a href="#become-a-member">How do I become a member?</a>}
+      />
+    </PricingDeck>
     <Callout
       id="become-a-member"
       title="How do I become a member?"

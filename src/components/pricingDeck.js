@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import Container from './container';
+import Container from './container'
+import PriceItem from './priceItem'
 
 const style = css`
 
@@ -105,29 +106,12 @@ const style = css`
   }
 `
 
-const PricingDeck = () => {
+const PricingDeck = ({children}) => {
   return (
     <div css={style}>
       <Container>
         <div className="card-deck">
-          <div className="card">
-            <header>
-              <h4>Supporting Member</h4>
-            </header>
-            <div className="card-body">
-              <h2>
-                $100 <small>/ year</small>
-                <span>or $10 / month</span>
-              </h2>
-              <ul>
-                <li>Access to the LaunchPad when accompanied by a full-time member</li>
-                <li>Full access to the Cape Cod Makers Slack group</li>
-                <li>Early Access to Class &amp; Event Registration</li>
-                <li>Discounted Class &amp; Event Fees</li>
-              </ul>
-              <a href="#become-a-member">How do I become a member?</a>
-            </div>
-          </div>
+          {children}
         </div>
       </Container>
     </div>
