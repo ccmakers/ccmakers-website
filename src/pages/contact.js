@@ -70,7 +70,17 @@ const ContactPage = (props) => (
         <div className="contact-content">
           <dl>
             <dt>Address:</dt>
-            <dd>204 Sisson Rd, Room 110<br />Harwich, MA 02645</dd>
+            <dd>
+              Harwich Cultural Center<br />
+              204 Sisson Rd, Room 110<br />
+              Harwich, MA 02645
+            </dd>
+            <dt>Hours:</dt>
+            <dd>
+              <strong>Tuesday</strong> 10am – 3pm<br />
+              <strong>Wednesday</strong> 7pm – 9pm<br />
+              <strong>Saturday</strong> 6pm – 9pm
+            </dd>
             <dt>Email:</dt>
             <dd>
               <a href="mailto:info@capecodmakers.org">info@capecodmakers.org</a>

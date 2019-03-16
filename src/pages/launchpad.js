@@ -43,8 +43,8 @@ const LaunchPadPage = () => (
   <Layout>
     <SEO title="LaunchPad" keywords={[`launchpad`, `makerspace`, `cape cod`, `makers`]} />
     <IntroPageHero
-      title="LaunchPad"
-      introText="The Launchpad, at the Harwich Cultural Center is a makerspace and a collaborative workspace where people can learn to use computers and tools such as soldering irons, 3D printers, laser cutters and more to design and make almost anything."
+      title="Create, Invent, Discover."
+      introText="The Launchpad MakerSpace, at the Harwich Cultural Center is a makerspace and a collaborative workspace where people can learn to use computers and tools such as soldering irons, 3D printers, laser cutters and more to design and make almost anything."
     />
     <CardGrid gridItems={featurets} />
     <Callout
