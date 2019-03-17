@@ -16,6 +16,7 @@ const MembershipPage = () => (
     />
     <PricingDeck>
       <PriceItem
+        centered
         title="Supporting Member"
         yearlyPrice={100}
         monthlyPrice={10}

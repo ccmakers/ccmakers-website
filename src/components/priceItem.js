@@ -25,6 +25,10 @@ const style = css`
     width: 450px;
   }
 
+  &.centered {
+    margin: 0 auto 2rem;
+  }
+
   header {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
@@ -106,10 +110,11 @@ const PriceItem = ({
   yearlyPrice,
   monthlyPrice,
   benefits,
-  link
+  link,
+  centered
 }) => {
   return (
-    <div css={style}>
+    <div css={style} className={ centered && `centered`}>
       {title && (
         <header>
           <h4>{title}</h4>
