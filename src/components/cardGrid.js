@@ -10,8 +10,9 @@ const style = css`
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   display: flex;
+  flex-direction: column;
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
