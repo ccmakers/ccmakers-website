@@ -4,6 +4,7 @@ date: 2019-03-19
 title: "Tuesday events March 19, 2019"
 summary: "A blog to recount the events that happen in the Harwich Makerspace on Tuesdays."
 coverPicture: "./cover.jpg"
+author: Rob-Wilson
 ---
 
 Marc Sitkin and I talked to admins at the Harwich Cultural Center today and found a place to store the sewing machine pullouts that were removed. The cubby holes will store the computers, freeing up table space.
