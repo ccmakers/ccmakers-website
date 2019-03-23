@@ -2,7 +2,7 @@
 slug: "/2019-03-19-Tuesday-events-mar-29th"
 date: 2019-03-19
 title: "Tuesday events March 19, 2019"
-summary: "A blog to recount the events that happen in the Harwich Makerspace on Tuesdays.
+summary: "A blog to recount the events that happen in the Harwich Makerspace on Tuesdays."
 coverPicture: "./cover.jpg"
 ---
 
