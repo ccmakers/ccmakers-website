@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Container from "../components/container";
 import IntroPageHero from "../components/introPageHero";
 import { css } from '@emotion/core'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const style = css`
   display: flex;
@@ -63,9 +64,9 @@ const ContactPage = (props) => (
     <Container>
       <div css={style}>
         <div className="map">
-          <a href={mapLink} target="_blank" rel="noopener noreferrer">
+          <OutboundLink href={mapLink} target="_blank" rel="noopener noreferrer">
             <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-          </a>
+          </OutboundLink>
         </div>
         <div className="contact-content">
           <dl>

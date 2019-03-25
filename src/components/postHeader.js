@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
 import Img from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 const style = css`
 
   margin: 0 auto 2rem;
@@ -47,9 +48,9 @@ const PostHeader = ({ post }) => {
         <div className="post-meta--details">
 
           {post.author && (
-            <a href={post.author.website || `#` } target="_blank" rel="noopener noreferrer">
+            <OutboundLink href={post.author.website || `#` } target="_blank" rel="noopener noreferrer">
               {post.author.name}
-            </a>
+            </OutboundLink>
           )}
 
           {post.author && ` on `}

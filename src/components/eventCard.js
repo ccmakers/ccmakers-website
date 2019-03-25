@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
-
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import fallBackImage from '../images/cape-makers-things.png';
 
 const style = css`
@@ -58,23 +58,23 @@ const EventCard = ({
   return (
     <div css={style}>
       {featured_photo ? (
-        <a className="event-cover" href={link} target="_blank" rel="noopener noreferrer">
+        <OutboundLink className="event-cover" href={link} target="_blank" rel="noopener noreferrer">
           <img src={featured_photo.photo_link} alt={`${name} Event`} />
-        </a>
+        </OutboundLink>
       ) : (
-        <a className="event-cover" href={link} target="_blank" rel="noopener noreferrer">
+        <OutboundLink className="event-cover" href={link} target="_blank" rel="noopener noreferrer">
           <img src={fallBackImage} alt={`${name} Event`} />
-        </a>
+        </OutboundLink>
       )}
       <div className="event-content">
-        <a href={link} target="_blank" rel="noopener noreferrer"><h3>{name}</h3></a>
+        <OutboundLink href={link} target="_blank" rel="noopener noreferrer"><h3>{name}</h3></OutboundLink>
         <time>{new Intl.DateTimeFormat('en-US', {
           year: 'numeric', month: 'numeric', day: 'numeric',
           hour: 'numeric', minute: 'numeric',
           hour12: true,
           timeZone: 'America/New_York'
         }).format(new Date(time))}</time>
-        <a className="button" href={link} target="_blank" rel="noopener noreferrer">View More</a>
+        <OutboundLink className="button" href={link} target="_blank" rel="noopener noreferrer">View More</OutboundLink>
       </div>
     </div>
   )

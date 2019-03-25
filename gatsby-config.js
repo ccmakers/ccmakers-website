@@ -116,6 +116,15 @@ module.exports = {
         page: 100
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-136958368-1",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        respectDNT: true
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
