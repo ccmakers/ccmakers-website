@@ -45,7 +45,8 @@ const PostHeader = ({ post }) => {
           <Img fixed={post.author.pic.childImageSharp.fixed} />
         )}
         <div className="post-meta--details">
-        {post.author && (
+
+          {post.author && (
             <a href={post.author.website || `#` } target="_blank" rel="noopener noreferrer">
               {post.author.name}
             </a>
