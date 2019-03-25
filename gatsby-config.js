@@ -4,6 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://capecodmakers.org`,
     title: 'Cape Cod Makers',
     description: '',
     author: 'ccmakers',
@@ -16,6 +17,7 @@ module.exports = {
     author: `@ccmakers`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-yaml`,
     {
@@ -127,7 +129,7 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
   mapping: {
     "MarkdownRemark.frontmatter.author": `AuthorsYaml.id`,
