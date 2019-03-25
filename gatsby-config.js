@@ -98,8 +98,7 @@ module.exports = {
         }
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-offline`,
+
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-meetup`,
