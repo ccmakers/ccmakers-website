@@ -21,7 +21,7 @@ const MembershipPage = () => (
         yearlyPrice={100}
         monthlyPrice={10}
         benefits={[
-          'Access to the LaunchPad when accompanied by a full-time member',
+          'Access to the LaunchPad MakerSpace',
           'Full access to the Cape Cod Makers Slack group',
           'Early Access to Class & Event Registration',
           'Discounted Class & Event Fees',
