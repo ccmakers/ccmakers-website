@@ -7,13 +7,15 @@ import MainHeader from "./mainHeader"
 import MainFooter from './mainFooter';
 import AlertBar from "./AlertBar";
 
+const showAlert = false;
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={pageQuery}
     render={data => (
       <>
         <GlobalStyles />
-        <AlertBar />
+        { showAlert && <AlertBar /> }
         <MainHeader />
         <main>{children}</main>
         <MainFooter socialMediaLinks={data.site.siteMetadata.socialMediaLinks} />
