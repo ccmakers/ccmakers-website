@@ -15,5 +15,5 @@ The rest of the day, I worked on the Doorbell design. The MakerSpace is in the b
 
 Mostly, this is because fof the capablities that we have inhouse. 
 
-![Concept Design of Doorbell](./Doorbell\ v4.png)
+![Concept Design of Doorbell](./Doorbell_v4.jpg)
 
