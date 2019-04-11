@@ -3,7 +3,7 @@ slug: "/2019-04-09-fun-at-the-launchpad"
 date: 2019-04-09
 title: "Fun at the LaunchPad"
 summary: "A blog to recount the events that happen in the Harwich Makerspace on Tuesdays."
-coverPicture: "./GrayPatternMed.jpg"
+coverPicture: "./Doorbell_v4.jpg"
 author: rob-wilson
 ---
 
