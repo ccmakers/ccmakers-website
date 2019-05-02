@@ -4,6 +4,10 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Container from './container'
 
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+
+const url = "https://capecodmakers.us6.list-manage.com/subscribe/post?u=6926dc1ce11c58404c247c393&amp;id=86c3fe1a4b";
+
 const style = css`
   padding: 2rem 0;
   border-top: 2px solid #0093D0;
@@ -16,6 +20,46 @@ const style = css`
   .copy {
     text-align: center;
     padding: 1rem 0 0;
+
+    .newsletter {
+      padding: 1rem 0;
+
+      > div > div {
+        background-color: #dfeff5;
+        padding: 1rem;
+        max-width: 500px;
+        margin: auto;
+        font-family: "Open Sans",sans-serif;
+
+        a {
+          font-family: "Open Sans",sans-serif;
+        }
+      }
+
+      input {
+        margin-top: 1rem;
+        padding: 8px 4px;
+        border: 1px solid #0093D0;
+        border-right: 0;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        margin-top: 1rem;
+        padding: 8px;
+        border: 1px solid #0093D0;
+        background-color: #0093D0;
+        color: #fff;
+        border-left: 0;
+
+        &:hover {
+          background-color: #80c6e6;
+          cursor: pointer;
+        }
+      }
+    }
   }
 
   .social {
@@ -69,6 +113,10 @@ const MainFooter = ({ socialMediaLinks }) => {
         <div className="wrapper">
           <div className="copy">
             Copyright &copy; {new Date().getFullYear()} Cape Cod Makers, Inc.
+
+            <div className="newsletter">
+              <MailchimpSubscribe url={url} />
+            </div>
           </div>
           <ul className="social">
             { socialMediaLinks && socialMediaLinks.map( link => (
