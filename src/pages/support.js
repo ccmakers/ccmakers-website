@@ -12,7 +12,7 @@ const SupportPage = (props) => (
     <SEO title="Support" keywords={[`support`, `donate`, `sponsor`, `cape cod`, `makers`]} />
     <IntroPageHero
       title="Support"
-      introText="Please consider support our LaunchPad. We contribute to the community by encouraging entrepreneurship, providing training and support for educators and students, and also workforce development."
+      introText="Please consider supporting our LaunchPad MakerSpace. We contribute to the community by encouraging entrepreneurship, providing training and support for educators and students, and also workforce development."
     />
     <PricingDeck>
     <PriceItem
@@ -22,7 +22,7 @@ const SupportPage = (props) => (
           'Company name and logo on our Wall of Gratitude',
           'Company logo with hyperlink on our website',
           'Mentions on social media',
-          'Supporting membership up to 5 employees',
+          'Supporting membership for up to 5 employees',
         ]}
       />
 
@@ -32,8 +32,8 @@ const SupportPage = (props) => (
         benefits={[
           'Large company name and logo on our Wall of Gratitude',
           'Company logo with hyperlink on our website',
-          'Supporting membership up to 10 employees',
           'Mentions on social media',
+          'Supporting membership for up to 10 employees',
         ]}
       />
 
@@ -55,7 +55,7 @@ const SupportPage = (props) => (
         title="Platinum"
         yearlyPrice="25,000"
         benefits={[
-          'Name one of our shop areas . ie (ACME 3D print Lab)',
+          'Name one of our shop areas. ie (ACME 3D Printing Lab)',
           'A complimentary customized private training, testing or team building program in our facility',
           'Huge Company name and logo on our Wall of Gratitude',
           'Company logo with hyperlink on Web Site',

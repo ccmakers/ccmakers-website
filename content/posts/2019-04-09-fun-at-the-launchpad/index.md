@@ -2,7 +2,7 @@
 slug: "/2019-04-09-fun-at-the-launchpad"
 date: 2019-04-09
 title: "Fun at the LaunchPad"
-summary: "A blog to recount the events that happen in the Harwich Makerspace on Tuesdays."
+summary: "A blog to recount the events that happen in the LaunchPad MakerSpace on Tuesdays."
 coverPicture: "./Doorbell_v4.jpg"
 author: rob-wilson
 ---
@@ -13,7 +13,7 @@ We changed the filament to orange, and started a print for her.
 
 The rest of the day, I worked on the Doorbell design. The MakerSpace is in the back of the building and the front door is not in earshot. So, Jesse has come come up with an electrical design and I need to fit it into a physical enclosure. I am currently thinking that the electronics will be in a wooden box that we carve out with the X-Carve. There is a button to alert us that will be housed in a plastic insert, that will be mounted in a hole in the wood box. Then, the solar panel is attached to the end of the box.
 
-Mostly, this is because of the capablities that we have in-house. 
+Mostly, this is because of the capabilities that we have in-house. 
 
 ![Concept Design of Doorbell](./Doorbell_v4.jpg)
 

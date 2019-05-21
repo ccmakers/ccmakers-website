@@ -50,7 +50,7 @@ const NewsletterCTA = () => {
       <Container>
         <div className="wrapper">
           <h2>Get Our Newsletter</h2>
-          <p>Join our newsletter bellow and recieve updates<br /> on events, classes and promotion.</p>
+          <p>Join our newsletter below and recieve updates<br /> on events, classes and promotions.</p>
           <div className="newsletter">
             <MailchimpSubscribe
               url={url}

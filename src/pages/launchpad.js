@@ -20,12 +20,12 @@ const featurets = [
   {
     title: "Kitchen",
     iconName: "refrigerator",
-    description: "Being a Home Ec room has it's advantages: we have a functional kitchen, with sinks, refrigerator, oven and range."
+    description: "Being a former Home Economics room has it's advantages: we have a functional kitchen, with sinks, refrigerator, oven and range."
   },
   {
     title: "Projects",
     iconName: "keyboard",
-    description: "Our members are always working on a variaty of project, from simple to complex, from wood to eletronics."
+    description: "Our members are always working on a variety of project, from simple to complex, from wood to electronics."
   },
   {
     title: "Membership",
