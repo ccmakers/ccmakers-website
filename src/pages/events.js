@@ -13,7 +13,7 @@ const EventsPage = () => (
       introText="Cape Cod Makers is engaged in promoting the Maker and DIY culture on Cape Cod. We do this through meetups, connecting local makers, hosting classes, group activities."
     />
     <StaticQuery query={pageQuery} render={data => (
-      <EventsGrid events={data.meetupGroup.childrenMeetupEvent} />
+      <EventsGrid events={data.meetupGroup.MeetupGroup} />
     )} />
   </Layout>
 )
@@ -21,7 +21,7 @@ const EventsPage = () => (
 const pageQuery = graphql`
   query Events {
     meetupGroup {
-      childrenMeetupEvent {
+      events {
         id
         name
         status
