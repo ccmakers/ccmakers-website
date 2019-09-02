@@ -47,6 +47,7 @@ const style = css`
 
 const EventCard = ({
   title,
+  summary,
   link,
   local_date,
   local_time,
@@ -73,6 +74,9 @@ const EventCard = ({
           hour12: true,
           timeZone: 'America/New_York'
         }).format(new Date(local_date + ' ' + local_time))}</time>
+        <div dangerouslySetInnerHTML={{
+          __html: summary
+        }} />
         <OutboundLink className="button" href={link} target="_blank" rel="noopener noreferrer">View More</OutboundLink>
       </div>
     </div>

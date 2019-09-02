@@ -63,7 +63,7 @@ class Post extends Component {
         <SEO
           title={frontmatter.title}
           keywords={[`blog`, `cape cod`, `makers`]}
-          picture={frontmatter.coverPicture.childImageSharp.fixed.src}
+          picture={`https://capecodmakers.org${frontmatter.coverPicture.childImageSharp.fixed.src}`}
         />
         <Container>
           <article css={style}>
@@ -74,8 +74,6 @@ class Post extends Component {
                 <img src={frontmatter.coverPicture.childImageSharp.fixed.src} alt={`${frontmatter.title}`} />
               </picture>
             )}
-
-
             <div className="post-content" dangerouslySetInnerHTML={{
               __html: html
             }} />
