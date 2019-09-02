@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { css } from '@emotion/core'
 
 import Container from './container'
@@ -11,19 +11,20 @@ const style = css`
   flex-direction: column;
 `
 
-class EventsGrid extends Component {
-  render() {
-    const {events} = this.props
-    return (
-      <Container>
-        <div css={style}>
-          {events && events.map( event => (
-            <EventCard key={event.id} {...event} />
-          ))}
-        </div>
-      </Container>
-    )
-  }
+const EventsGrid = ({events}) => {
+  return (
+    <Container>
+      <div css={style}>
+        {events && events.map( event => {
+          const { node } = event;
+          return (
+            <EventCard key={node.id} {...node} />
+          )
+        })}
+      </div>
+    </Container>
+  )
 }
+
 
 export default EventsGrid

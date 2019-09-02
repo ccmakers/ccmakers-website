@@ -52,7 +52,7 @@ const style = css`
   }
 `
 const NewsletterForm = ({ status, message, onValidated }) => {
-  let email, name;
+  let email;
   const submit = () =>
     email &&
     email.value.indexOf("@") > -1 &&

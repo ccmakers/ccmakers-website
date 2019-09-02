@@ -46,12 +46,11 @@ const style = css`
 `
 
 const EventCard = ({
-  name,
+  title,
   link,
-  status,
-  time,
+  local_date,
+  local_time,
   venue,
-  visibility,
   featured_photo
 }) => {
   console.log(venue);
@@ -59,21 +58,21 @@ const EventCard = ({
     <div css={style}>
       {featured_photo ? (
         <OutboundLink className="event-cover" href={link} target="_blank" rel="noopener noreferrer">
-          <img src={featured_photo.photo_link} alt={`${name} Event`} />
+          <img src={featured_photo.highres_link} alt={`${title} Event`} />
         </OutboundLink>
       ) : (
         <OutboundLink className="event-cover" href={link} target="_blank" rel="noopener noreferrer">
-          <img src={fallBackImage} alt={`${name} Event`} />
+          <img src={fallBackImage} alt={`${title} Event`} />
         </OutboundLink>
       )}
       <div className="event-content">
-        <OutboundLink href={link} target="_blank" rel="noopener noreferrer"><h3>{name}</h3></OutboundLink>
+        <OutboundLink href={link} target="_blank" rel="noopener noreferrer"><h3>{title}</h3></OutboundLink>
         <time>{new Intl.DateTimeFormat('en-US', {
           year: 'numeric', month: 'numeric', day: 'numeric',
           hour: 'numeric', minute: 'numeric',
           hour12: true,
           timeZone: 'America/New_York'
-        }).format(new Date(time))}</time>
+        }).format(new Date(local_date + ' ' + local_time))}</time>
         <OutboundLink className="button" href={link} target="_blank" rel="noopener noreferrer">View More</OutboundLink>
       </div>
     </div>
