@@ -63,6 +63,7 @@ class Post extends Component {
         <SEO
           title={frontmatter.title}
           keywords={[`blog`, `cape cod`, `makers`]}
+          picture={frontmatter.coverPicture.childImageSharp.fixed.src}
         />
         <Container>
           <article css={style}>
