@@ -12,41 +12,41 @@ const EventsPage = () => (
       title="Events"
       introText="Cape Cod Makers is engaged in promoting the Maker and DIY culture on Cape Cod. We do this through meetups, connecting local makers, hosting classes, group activities."
     />
-    <StaticQuery query={pageQuery} render={data => (
+    {/* <StaticQuery query={pageQuery} render={data => (
       <EventsGrid events={data.meetupGroup.MeetupGroup} />
-    )} />
+    )} /> */}
   </Layout>
 )
 
-const pageQuery = graphql`
-  query Events {
-    meetupGroup {
-      events {
-        id
-        name
-        status
-        time
-        featured_photo {
-          thumb_link
-          photo_link
-          highres_link
-        }
-        link
-        description
-        visibility
-        venue {
-          name
-          lat
-          lon
-          repinned
-          address_1
-          city
-          country
-          localized_country_name
-        }
-      }
-    }
-  }
-`
+// const pageQuery = graphql`
+//   query Events {
+//     meetupGroup {
+//       events {
+//         id
+//         name
+//         status
+//         time
+//         featured_photo {
+//           thumb_link
+//           photo_link
+//           highres_link
+//         }
+//         link
+//         description
+//         visibility
+//         venue {
+//           name
+//           lat
+//           lon
+//           repinned
+//           address_1
+//           city
+//           country
+//           localized_country_name
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default EventsPage
