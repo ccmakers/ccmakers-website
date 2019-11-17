@@ -2,7 +2,7 @@
 
 # Cape Cod Makers Website
 
-Cape Cod Maerks Website is built on GatsbyJS and hosted on Netlify
+Cape Cod Makers Website is built on GatsbyJS and hosted on Netlify
 
 ## Prerequisites
 
