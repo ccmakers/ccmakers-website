@@ -143,6 +143,11 @@ const MainHeader = () => {
           <li>
             <Link to='/contact' activeClassName="active">Contact</Link>
           </li>
+
+          <li>
+            <Link to='/sponsor' activeClassName="active">Sponsor</Link>
+          </li>
+
         </ul>
       </nav>
     </header>
