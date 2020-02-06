@@ -1,9 +1,8 @@
 ---
-title: "Cape Cod Mini Maker Faire 2020 – Robotics Competition"
+title: "Robot Beach Party Saturday April 18, 2020"
 slug: "/2020-02-02-cape-cod-mini-maker-faire-robotics-competition"
 date: 2020-02-02
-summary: "Cape Cod Makers will be hosting its annual Robotics Competition at the
-2020 Cape Cod Mini Maker Faire."
+summary: "Robot Beach Party"
 coverPicture: "./cover.jpg"
 author: jesse-craig
 ---
@@ -11,7 +10,7 @@ author: jesse-craig
 
 ## Overview
 
-Cape Cod Makers will be hosting its annual Robotics Competition at the 2020 Cape Cod Mini Maker Faire. This competition is designed to be accessible to people new to robotics, yet open-ended enough to allow experienced robotics developers a chance to show off their capabilities. Anyone is invited to participate with competitors broken into two leagues: Open League and Student League. Any team may register for Open League while the Student League is reserved for teams composed of students grades K-12. Teams may be of any size and participants can be on more than one team, however a robot can only be used by one team. The competition format is a time-limited treasure hunt. Each team will have 5 minutes to navigate an obstacle course, collecting and returning as many score cubes to the starting zone as possible. The team that collects the most score cubes during its 5 minutes will be announced the winner for its league.
+Cape Cod Makers will be hosting its annual Robotics Competition April 18, 2020 at the Cape Cod Mini Maker Faire (https://capecod.makerfaire.com/). This competition is designed to be accessible to people new to robotics, yet open-ended enough to allow experienced robotics developers a chance to show off their capabilities. Anyone is invited to participate with competitors broken into two leagues: Open League and Student League. Any team may register for Open League while the Student League is reserved for teams composed of students grades K-12. Teams may be of any size and participants can be on more than one team, however a robot can only be used by one team. The competition format is a time-limited treasure hunt. Each team will have 5 minutes to navigate an obstacle course, collecting and returning as many score cubes to the starting zone as possible. The team that collects the most score cubes during its 5 minutes will be announced the winner for its league.
 
 ## Registration
 
