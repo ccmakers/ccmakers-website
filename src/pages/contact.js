@@ -76,12 +76,13 @@ const ContactPage = (props) => (
               204 Sisson Rd, Room 110<br />
               Harwich, MA 02645
             </dd>
-            <dt>Hours:</dt>
+            <dt>Hours:<sup>*</sup></dt>
             <dd>
               <strong>Tuesday</strong> 10am – 3pm<br />
               <strong>Wednesday</strong> 7pm – 9pm<br />
               <strong>Saturday</strong> 6pm – 9pm
             </dd>
+            <i><sup>*</sup>Members should check Slack for any changes in hours.</i>
             <dt>Email:</dt>
             <dd>
               <a href="mailto:info@capecodmakers.org">info@capecodmakers.org</a>
