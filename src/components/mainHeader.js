@@ -133,6 +133,10 @@ const MainHeader = () => {
           </li>
 
           <li>
+            <Link to='/sponsor' activeClassName="active">Sponsors</Link>
+          </li>
+
+          <li>
             <Link to='/blog' activeClassName="active">Blog</Link>
           </li>
 
@@ -141,11 +145,7 @@ const MainHeader = () => {
           </li>
 
           <li>
-            <Link to='/contact' activeClassName="active">Contact</Link>
-          </li>
-
-          <li>
-            <Link to='/sponsor' activeClassName="active">Sponsor</Link>
+            <Link to='/contact' activeClassName="active">Hours &amp; Location</Link>
           </li>
 
         </ul>

@@ -57,9 +57,9 @@ const mapLink = `https://www.google.com/maps/place/204+Sisson+Rd,+Harwich,+MA+02
 
 const ContactPage = (props) => (
   <Layout>
-    <SEO title="Contact" keywords={[`contact`, `cape cod`, `makers`]} />
+    <SEO title="Location and Hours" keywords={[`contact`, `cape cod`, `makers`]} />
     <IntroPageHero
-      title="Contact"
+      title="Location and Hours"
     />
     <Container>
       <div css={style}>
@@ -82,8 +82,8 @@ const ContactPage = (props) => (
               <strong>Wednesday</strong> 7pm – 9pm<br />
               <strong>Saturday</strong> 6pm – 9pm
             </dd>
-            <i><sup>*</sup>Members should check Slack for any changes in hours.</i>
-            <dt>Email:</dt>
+            <i><sup>*</sup>Members should check Slack for any changes in hours.</i><br />
+            <dt>Questions? Send an email to:</dt>
             <dd>
               <a href="mailto:info@capecodmakers.org">info@capecodmakers.org</a>
             </dd>
