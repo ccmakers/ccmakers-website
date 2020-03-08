@@ -37,7 +37,7 @@ export const pageQuery = graphql`
   query {
     imageOne: file(relativePath: { eq: "harwich_cultural_council.PNG"}) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }

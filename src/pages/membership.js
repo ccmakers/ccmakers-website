@@ -18,7 +18,7 @@ const MembershipPage = () => (
       id="become-a-member"
       title="What are the benefits of joining?"
       text="Membership in Cape Cod Makers opens you up to both the makerspace and a community of fellow makers eager to help you Create, Invent, and Discover! Join everyone during our bi-weekly project times or use the tools during any of the open hours."
-      link={<Link to="/contact">MakerSpace Address and Hours</Link>}
+      link={<Link to="/contact">MakerSpace Hours &amp; Location</Link>}
     />
     <PricingDeck>
       <PriceItem
@@ -27,7 +27,7 @@ const MembershipPage = () => (
         yearlyPrice={100}
         monthlyPrice={10}
         benefits={[
-          'Access to the LaunchPad MakerSpace',
+          'Access to the LaunchPad MakerSpace during open hours',
           'Unlimited access to all MakerSpace tools',
           'Full access to the Cape Cod Makers Slack group',
           'Early Access to Class & Event Registration',
