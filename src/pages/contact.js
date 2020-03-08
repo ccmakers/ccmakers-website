@@ -78,9 +78,9 @@ const ContactPage = (props) => (
             </dd>
             <dt>Hours:<sup>*</sup></dt>
             <dd>
-              <strong>Tuesday</strong> 10am – 3pm (Project Time)<br />
+              <strong>Tuesday</strong> 10am – 3pm<br />
               <strong>Wednesday</strong> 7pm – 9pm (Project Time)<br />
-              <strong>Saturday</strong> 6pm – 9pm
+              <strong>Saturday</strong> 6pm – 9pm (Project Time)
             </dd>
             <i><sup>*</sup>Members should check Slack for any changes in hours.</i><br />
             <dt>Questions? Send an email to:</dt>
