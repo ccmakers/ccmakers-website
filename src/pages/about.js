@@ -29,8 +29,8 @@ const AboutPage = (props) => (
     <Callout
       id="join-the movement"
       title="Ready to join the movement?"
-      text="If you want to know more about the Cape Cod Makers, please visit us during one of our monthly open house events. We will give you a tour, answer your questions, and introduce you to some of our members."
-      link={<Link to="/events">View Events</Link>}
+      text="Stop by during one of our monthly open house events, or if you are ready to join please complete our online membership application."
+      link={<Link to="/membership">Join Now!</Link>}
     />
 
   </Layout>
