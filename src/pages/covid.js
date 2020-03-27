@@ -22,10 +22,14 @@ const style = css`
 
 const CovidPage = (props) => (
   <Layout>
-    <SEO title="Membership" keywords={[`membership`, `cape cod`, `makers`]} />
+    <SEO
+      title="Covid-19 Call to Action"
+      keywords={[`covid`, `cape cod`, `makers`, `visor`, `mask`, `3d printing`]}
+      description="Cape Cod Hospital has requested that Cape Cod Makers work with the community to create face-shields to help keep those on the frontlines safe. "
+      picture={`/images/covid-cover.jpg`} />
     <IntroPageHero
       title="Covid-19 Call to Action"
-      introText="Humanity is currently engaged in a war with a virus and at the frontlines of that war are our healthcare providers. Cape Cod Hospital has requested that Cape Cod Makers work with the community to create face-shield to help keep those on the frontlines safe. Our members stepped up! A proto-type was designed, refined, and approved by the hospital. Our 3D printers are already cranking out parts, <strong>but we can't do it alone!</strong>"
+      introText="Humanity is currently engaged in a war with a virus and at the frontlines of that war are our healthcare providers. Cape Cod Hospital has requested that Cape Cod Makers work with the community to create face-shields to help keep those on the frontlines safe. Our members stepped up! A proto-type was designed, refined, and approved by the hospital. Our 3D printers are already cranking out parts, <strong>but we can't do it alone!</strong>"
     />
     <Container>
       <Img fluid={props.data.cchVisor.childImageSharp.fluid} style={{width: 450, margin: "0 auto"}} />
@@ -70,6 +74,9 @@ export const pageQuery = graphql`
       childImageSharp {
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid
+        }
+        fixed(width: 1200) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
