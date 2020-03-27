@@ -50,7 +50,7 @@ const CovidPage = (props) => (
       id="donate-visors"
       title="Ready for pickup?"
       text="When you have 20 or more visors printed, please complete the form below and we will contact you to arrange pick-up. We will be doing air-gap pickup, asking you to leave the visors outside."
-      link={<Link to="https://forms.gle/REySmgXtSLcCRL2A9">Visor Donation Form</Link>}
+      link={<a href="https://forms.gle/REySmgXtSLcCRL2A9">Visor Donation Form</a>}
     />
   </Layout>
 )
