@@ -57,6 +57,8 @@ const HeroVideoContainer = ({ title }) => {
         loop
         autoPlay
         poster="/videos/3d-print-loop.jpg"
+        controls="muted"
+        ariaHidden="true"
       >
           <source src="/videos/3d-print-loop.m4v" type="video/mp4" />
           <source src="/videos/3d-print-loop.ogg" type="video/ogg" />

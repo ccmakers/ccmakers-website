@@ -2,11 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from 'gatsby-image'
-import { Link } from "gatsby"
 import Container from "../components/container";
 import IntroPageHero from "../components/introPageHero";
 import RichText from "../components/richText";
-import Callout from "../components/callout";
 import { graphql } from 'gatsby'
 
 const SponsorPage = (props) => (
@@ -26,7 +24,7 @@ const SponsorPage = (props) => (
       </RichText>
     </Container>
 
-    
+
 
   </Layout>
 )
