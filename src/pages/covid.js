@@ -1,9 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Container from "../components/container";
 import IntroPageHero from "../components/introPageHero";
-import PricingDeck from "../components/pricingDeck";
-import PriceItem from "../components/priceItem";
 import { Link } from "gatsby"
 import Callout from "../components/callout";
 
