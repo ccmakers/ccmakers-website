@@ -10,7 +10,7 @@ const EventsPage = () => (
     <SEO title="Events" keywords={[`events`, `cape cod`, `makers`]} />
     <IntroPageHero
       title="Events"
-      introText="Cape Cod Makers is engaged in promoting the Maker and DIY culture on Cape Cod. We do this through meetups, connecting local makers, hosting classes, group activities."
+      introText="Cape Cod Makers is engaged in promoting the Maker and DIY culture on Cape Cod. We do this through meetups, connecting local makers, hosting classes, and organizing group activities."
     />
     <StaticQuery query={pageQuery} render={data => (
       <EventsGrid events={data.allMeetupEvent.edges} />

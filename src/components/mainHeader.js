@@ -125,11 +125,19 @@ const MainHeader = () => {
           </li>
 
           <li>
+            <Link to='/covid' activeClassName="active">Covid-19 Call to Action</Link>
+          </li>
+
+          <li>
             <Link to='/membership' activeClassName="active">Membership</Link>
           </li>
 
           <li>
             <Link to='/support' activeClassName="active">Support</Link>
+          </li>
+
+          <li>
+            <Link to='/sponsor' activeClassName="active">Sponsors</Link>
           </li>
 
           <li>
@@ -141,8 +149,9 @@ const MainHeader = () => {
           </li>
 
           <li>
-            <Link to='/contact' activeClassName="active">Contact</Link>
+            <Link to='/contact' activeClassName="active">Hours &amp; Location</Link>
           </li>
+
         </ul>
       </nav>
     </header>
