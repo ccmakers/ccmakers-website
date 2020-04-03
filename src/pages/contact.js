@@ -72,7 +72,7 @@ const ContactPage = (props) => (
           <dl>
             <dt>Mailing Address:</dt>
             <dd>
-              Cpae Cod Makers<br />
+              Cape Cod Makers<br />
               P.O. Box 266<br />
               Marstons Mills, MA 02648
             </dd>
