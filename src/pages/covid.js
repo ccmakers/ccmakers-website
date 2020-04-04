@@ -4,7 +4,6 @@ import SEO from "../components/seo"
 import Img from 'gatsby-image'
 import Container from "../components/container";
 import IntroPageHero from "../components/introPageHero";
-import { Link } from "gatsby"
 import Callout from "../components/callout";
 import { css } from '@emotion/core'
 
