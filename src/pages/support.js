@@ -79,10 +79,12 @@ const style = css`
 
 const SupportPage = (props) => {
 
-  const success = useQueryParam('success', '');
+  const isSSR = typeof window === "undefined"
 
-  if (success !== null && success)  {
-    console.log(true);
+  let success = false
+
+  if (!isSSR) {
+    success = useQueryParam('success', '');
   }
 
 
