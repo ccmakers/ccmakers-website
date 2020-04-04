@@ -60,9 +60,10 @@ const HeroVideoContainer = ({ title }) => {
         controls="muted"
         ariaHidden="true"
       >
-          <source src="/videos/3d-print-loop.m4v" type="video/mp4" />
-          <source src="/videos/3d-print-loop.ogg" type="video/ogg" />
-          <source src="/videos/3d-print-loop.webm" type="video/webm" />
+        <track label="English" kind="captions" src="/videos/3d-print-loop.vtt" />
+        <source src="/videos/3d-print-loop.m4v" type="video/mp4" />
+        <source src="/videos/3d-print-loop.ogg" type="video/ogg" />
+        <source src="/videos/3d-print-loop.webm" type="video/webm" />
       </video>
       <div className="video-overlay">
         { title && (<h1>{title}</h1>)}
