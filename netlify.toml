@@ -5,9 +5,3 @@
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "no-referrer"
     X-Content-Type-Options = "nosniff"
-
-[[redirects]]
-  from = "/thankyou"
-  to = "/support?success=true"
-  status = 301
-  force = true
