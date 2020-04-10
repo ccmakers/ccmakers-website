@@ -36,7 +36,10 @@ const SEO = ({ description, lang, meta, keywords, title, picture }) => {
               },
               {
                 property: `og:image`,
-                content: `https://capecodmakers.org/covid${picture}`,
+                content: picture.startsWith("http")
+                  ? picture
+                  :`https://capecodmakers.org/${picture}`
+                ,
               },
               {
                 name: `twitter:card`,

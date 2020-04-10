@@ -1,6 +1,7 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 
 module.exports = {
   siteMetadata: {
@@ -112,10 +113,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-sanity',
       options: {
-        projectId: 'v841t6bk',
-        dataset: 'production',
-        // a token with read permissions is required
-        // if you have a private dataset
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
         token: process.env.MY_SANITY_TOKEN,
       },
     },

@@ -6,6 +6,7 @@ import Container from "../components/container";
 import IntroPageHero from "../components/introPageHero";
 import Callout from "../components/callout";
 import { css } from '@emotion/core'
+import { graphql } from 'gatsby'
 
 const style = css`
 

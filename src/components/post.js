@@ -13,7 +13,7 @@ const style = css`
 
   .cover-picture {
     img {
-      max-width: 100%;
+      width: 100%;
       margin: 1rem auto;
     }
   }
@@ -67,7 +67,10 @@ class Post extends Component {
         />
         <Container>
           <article css={style}>
-            <PostHeader post={frontmatter} />
+            <PostHeader
+              title={frontmatter.title}
+              author={frontmatter.author}
+              date={frontmatter.date} />
 
             {frontmatter.coverPicture !== null && (
               <picture className="cover-picture">

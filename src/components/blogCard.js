@@ -50,29 +50,28 @@ const style = css`
 `
 
 const BlogCard = ({
-  slug,
+  uri,
   title,
   date,
   summary,
   coverPicture
 }) => {
-  console.log(slug);
   return (
     <div css={style}>
       {coverPicture ? (
-        <Link className="blog-cover" to={`/blog${slug}`}>
-          <img src={coverPicture.childImageSharp.fixed.src} alt={`${title}`} />
+        <Link className="blog-cover" to={uri}>
+          <img src={coverPicture} alt={`${title}`} />
         </Link>
       ) : (
-        <Link className="blog-cover" to={`/blog${slug}`}>
+        <Link className="blog-cover" to={uri}>
           <img src={fallBackImage} alt={`${title}`} />
         </Link>
       )}
       <div className="blog-content">
-        <Link to={`/blog${slug}`}><h3>{title}</h3></Link>
+        <Link to={uri}><h3>{title}</h3></Link>
         <time>{date}</time>
         <p>{summary}</p>
-        <Link className="button" to={`/blog${slug}`}>View More</Link>
+        <Link className="button" to={uri}>View More</Link>
       </div>
     </div>
   )
