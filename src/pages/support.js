@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from '@emotion/core'
-import { useQueryParam } from "gatsby-query-params";
+import { useQueryParam, StringParam } from "use-query-params";
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -79,14 +80,7 @@ const style = css`
 
 const SupportPage = (props) => {
 
-  const isSSR = typeof window === "undefined"
-
-  let success = false
-
-  if (!isSSR) {
-    success = useQueryParam('success', '');
-  }
-
+  const [success, setSuccess] = useQueryParam("success", StringParam);
 
   return (
     <Layout>

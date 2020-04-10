@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-yaml`,
+    `gatsby-plugin-use-query-params`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -106,6 +107,16 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: false,
         respectDNT: true
+      },
+    },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'v841t6bk',
+        dataset: 'production',
+        // a token with read permissions is required
+        // if you have a private dataset
+        token: process.env.MY_SANITY_TOKEN,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
