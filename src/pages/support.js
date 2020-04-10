@@ -80,7 +80,9 @@ const style = css`
 
 const SupportPage = (props) => {
 
+  /* eslint-disable */
   const [success, setSuccess] = useQueryParam("success", StringParam);
+  /* eslint-enable */
 
   return (
     <Layout>
