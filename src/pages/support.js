@@ -97,7 +97,10 @@ const SupportPage = (props) => {
           <p><strong>Cape Cod Makers</strong> is a 501(c)(3) non-profit organization, and your donations are tax-deductible. Your investment in us will allow us to expand our offerings, both in equipment and training.</p>
 
           {success !== null && success ? (
-            <h3>Thanks for your donation!</h3>
+            <>
+              <h3>Thank you for your support!</h3>
+              <p>Please stop by the MakerSpace during one of our events to see all the great projects you're contributing to.</p>
+            </>
           ) : (
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
               <input type="hidden" name="cmd" value="_s-xclick" />
