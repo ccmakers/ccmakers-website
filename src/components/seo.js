@@ -36,7 +36,7 @@ const SEO = ({ description, lang, meta, keywords, title, picture }) => {
               },
               {
                 property: `og:image`,
-                content: picture.substring(0, 4) === "http"
+                content: picture && picture.length > 0 && picture.substring(0, 4) === "http"
                   ? picture
                   :`https://capecodmakers.org/${picture}`
                 ,
