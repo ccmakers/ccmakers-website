@@ -25,11 +25,11 @@ const CovidPage = (props) => (
     <SEO
       title="Covid-19 Call to Action"
       keywords={[`covid`, `cape cod`, `makers`, `visor`, `mask`, `3d printing`]}
-      description="Cape Cod Hospital has requested that Cape Cod Makers work with the community to create face-shields to help keep those on the frontlines safe. "
+      description="Cape Cod Makers is working with the community to create face-shields to help keep those on the frontlines safe."
       picture={`/images/covid-cover.jpg`} />
     <IntroPageHero
-      title="Covid-19 Call to Action"
-      introText="Humanity is currently engaged in a war with a virus and at the frontlines of that war are our healthcare providers. Cape Cod Hospital has requested that Cape Cod Makers work with the community to create face-shields to help keep those on the frontlines safe. Our members stepped up! A proto-type was designed, refined, and approved by the hospital. Our 3D printers are already cranking out parts, <strong>but we can't do it alone!</strong>"
+      title="Covid-19 Call to Action (Part 2)"
+      introText="Congratulations to everyone that helped us reach our original goal of providing 5,000 faceshields to Cape Cod Healthcare. Now were are being asked by Nursing Homes and Assisted Living Facilities to provide faceshields. These facilities have been some of the hardest hit by the Covid-19 pandemic on Cape Cod. Our 3D printers are back up and running, <strong>but we can't do it alone!</strong> We need the community to help print 2,000 more visors components."
     />
     <Container>
       <Img fluid={props.data.cchVisor.childImageSharp.fluid} style={{width: 450, margin: "0 auto"}} />
@@ -53,7 +53,7 @@ const CovidPage = (props) => (
     <Callout
       id="donate-visors"
       title="Ready for pickup?"
-      text="When you have 20 or more visors printed, please complete the form below and we will contact you to arrange pick-up. We will be doing air-gap pickup, asking you to leave the visors outside."
+      text="When you have 20 or more visors printed, please complete the form below and we will contact you to arrange pick-up. We will be doing dead-drop pickup, asking you to leave the visors outside. You can also request more filament if you are running low."
       link={<a href="https://forms.gle/REySmgXtSLcCRL2A9">Visor Donation Form</a>}
     />
   </Layout>
