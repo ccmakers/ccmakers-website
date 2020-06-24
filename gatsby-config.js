@@ -118,6 +118,24 @@ module.exports = {
         token: process.env.MY_SANITY_TOKEN,
       },
     },
+    {
+      resolve: 'gatsby-source-google-spreadsheets',
+      options: {
+        spreadsheetId: '1Jxz6rslfLS-aQDo-wt7jX8fZ8NjHerPy7o2bCgNc72M',
+        credentials: {
+          type: 'service_account',
+          project_id: process.env.G_PROJECT_ID,
+          private_key_id: process.env.G_PRIVATE_KEY_ID,
+          private_key: process.env.G_PRIVATE_KEY.replace(/(\\r)|(\\n)/g, '\n'),
+          client_email: process.env.G_CLIENT_EMAIL,
+          client_id: '',
+          auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+          token_uri: 'https://oauth2.googleapis.com/token',
+          auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+          client_x509_cert_url: `https://www.googleapis.com/robot/v1/metadata/x509/${process.env.G_PROJECT_ID}%40appspot.gserviceaccount.com`,
+        },
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
