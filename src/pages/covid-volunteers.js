@@ -71,9 +71,15 @@ const CovidVolunteersPage = () => {
 
             const pictures = data.allFile.edges.map(edge => edge.node)
             const profiles = data.allGoogleVolunteersSheet.edges.filter(edge => edge.node.isAnonymous_ !== "Yes").map(edge => {
+              let pic = pictures.find(pic => pic.email === edge.node.emailAddress)
+              if (pic === undefined ) {
+                pic = {
+                  publicURL: `https://www.gravatar.com/avatar/${md5(edge.node.emailAddress)}?d=${encodeURIComponent("https://capecodmakers.org/images/volunteer-avatar.png")}&s=720`
+                }
+              }
               return {
                 ...edge.node,
-                picture: pictures.find(pic => pic.email === edge.node.emailAddress)
+                picture: pic
               }
             })
 
@@ -83,11 +89,7 @@ const CovidVolunteersPage = () => {
                   <div className="profile" key={profile.id}>
                     <div className="profile--wrapper">
                       <picture>
-                        {
-                          profile.picture === undefined
-                          ? <img src={`https://www.gravatar.com/avatar/${md5(profile.emailAddress)}?d=${encodeURIComponent("https://capecodmakers.org/images/volunteer-avatar.png")}`} alt="Volunteer Avatar"/>
-                          : <img src={profile.picture.publicURL} alt="Volunteer Avatar"/>
-                        }
+                        <img src={profile.picture.publicURL} alt="Volunteer Avatar"/>
                       </picture>
                       <div className="profile--name">
                         {`${profile.firstName} ${profile.lastName}`}
