@@ -38,7 +38,7 @@ const style = css`
 
     &--wrapper {
       picture {
-        background-color: #D5E9F6;
+        position: relative;
         border-radius: 50%;
         display: block;
         img {
