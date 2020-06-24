@@ -29,9 +29,9 @@ const style = css`
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    /* @media (min-width: 1100px) {
+    @media (min-width: 1100px) {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    } */
+    }
   }
 
   .profile {
