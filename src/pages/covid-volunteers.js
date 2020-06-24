@@ -52,6 +52,7 @@ const style = css`
     &--name {
       text-align: center;
       font-size: 1.4rem;
+      text-transform: capitalize;
     }
   }
 `;
@@ -79,6 +80,8 @@ const CovidVolunteersPage = () => {
               }
               return {
                 ...edge.node,
+                firstName: edge.node.firstName.trim().toLowerCase(),
+                lastName: edge.node.lastName.trim().toLowerCase(),
                 picture: pic
               }
             })
