@@ -82,6 +82,10 @@ const style = css`
         color: rgba(#fff, .8);
         transition: color .4s ease, background-color .4s ease;
 
+        &.highlight {
+          background-color: #223F93;
+        }
+
         &:hover {
           color: #fff;
         }
@@ -116,12 +120,12 @@ const MainHeader = () => {
       </Link>
       <nav>
         <ul>
-          <li>
-            <Link to='/launchpad' activeClassName="active">LaunchPad</Link>
+          <li className="highlight">
+            <Link to='/covid-volunteers' activeClassName="active">COVID Volunteers</Link>
           </li>
 
           <li>
-            <Link to='/covid' activeClassName="active">Covid-19 Call to Action</Link>
+            <Link to='/launchpad' activeClassName="active">LaunchPad</Link>
           </li>
 
           <li>
