@@ -121,10 +121,6 @@ const MainHeader = () => {
           </li>
 
           <li>
-            <Link to='/events' activeClassName="active">Events</Link>
-          </li>
-
-          <li>
             <Link to='/covid' activeClassName="active">Covid-19 Call to Action</Link>
           </li>
 
