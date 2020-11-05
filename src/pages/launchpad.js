@@ -17,12 +17,7 @@ const featurets = [
     iconName: "tools",
     description: "3D Printers, Soldering Station, X-Carve, Hand Tools and more! We have them and we can show you how to use'em!"
   },
-  {
-    title: "Kitchen",
-    iconName: "refrigerator",
-    description: "Being a former Home Economics room has it's advantages: we have a functional kitchen, with sinks, refrigerator, oven and range."
-  },
-  {
+   {
     title: "Projects",
     iconName: "keyboard",
     description: "Our members are always working on a variety of project, from simple to complex, from wood to electronics."
