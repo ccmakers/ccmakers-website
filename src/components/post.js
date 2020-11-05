@@ -13,7 +13,7 @@ const style = css`
 
   .cover-picture {
     img {
-      max-width: 100%;
+      width: 100%;
       margin: 1rem auto;
     }
   }
@@ -63,18 +63,20 @@ class Post extends Component {
         <SEO
           title={frontmatter.title}
           keywords={[`blog`, `cape cod`, `makers`]}
+          picture={`https://capecodmakers.org${frontmatter.coverPicture.childImageSharp.fixed.src}`}
         />
         <Container>
           <article css={style}>
-            <PostHeader post={frontmatter} />
+            <PostHeader
+              title={frontmatter.title}
+              author={frontmatter.author}
+              date={frontmatter.date} />
 
             {frontmatter.coverPicture !== null && (
               <picture className="cover-picture">
                 <img src={frontmatter.coverPicture.childImageSharp.fixed.src} alt={`${frontmatter.title}`} />
               </picture>
             )}
-
-
             <div className="post-content" dangerouslySetInnerHTML={{
               __html: html
             }} />

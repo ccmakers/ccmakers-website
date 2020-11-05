@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Container from './container'
 
 const style = css`
@@ -72,11 +73,11 @@ const MainFooter = ({ socialMediaLinks }) => {
           <ul className="social">
             { socialMediaLinks && socialMediaLinks.map( link => (
               <li key={link.name}>
-                <a className={`sm-${link.name}`} href={link.url} target="_blank" rel="noopener noreferrer">
+                <OutboundLink className={`sm-${link.name}`} href={link.url} target="_blank" rel="noopener noreferrer">
                   {link.name === 'Facebook' && <FaFacebookF />}
                   {link.name === 'LinkedIn' && <FaLinkedinIn />}
                   {link.name === 'Twitter' && <FaTwitter />}
-                </a>
+                </OutboundLink>
               </li>
             ))}
           </ul>

@@ -1,8 +1,8 @@
 ---
 slug: "/2019-03-18-newsletter"
 date: 2019-03-18
-title: "Cape Cod Makers Newsletter March"
-summary: "Cape Cod Makers Newsletter March"
+title: "Cape Cod Makers March Newsletter"
+summary: "Cape Cod Makers March Newsletter"
 coverPicture: "./xcarve.jpg"
 ---
 The makerspace has grown a lot since our last newsletter. We are happy to welcome 10 new members! We have also started a new round of classes and purchased some new equipment. Currently we are running the Arduino Basics class until the beginning of April. After that you should expect to see more classes posted as we have some others in development.

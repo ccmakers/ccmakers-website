@@ -1,6 +1,5 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import Img from 'gatsby-image'
 const style = css`
 
   margin: 0 auto 2rem;
@@ -36,26 +35,23 @@ const style = css`
     margin-right: .5rem;
   }
 `
-const PostHeader = ({ post }) => {
+const PostHeader = ({
+  title,
+  author,
+  date
+}) => {
   return (
     <header css={style}>
-      <h1>{post.title}</h1>
+      <h1>{title}</h1>
       <div className="post-meta">
-        {post.author && post.author.pic !== null &&(
-          <Img fixed={post.author.pic.childImageSharp.fixed} />
-        )}
         <div className="post-meta--details">
-        {post.author && (
-            <a href={post.author.website || `#` } target="_blank" rel="noopener noreferrer">
-              {post.author.name}
-            </a>
-          )}
 
-          {post.author && ` on `}
-          <time dateTime={new Date(post.date).toISOString()}>{new Intl.DateTimeFormat('en-US', {
+          {author && `by ${author.name} on `}
+
+          <time dateTime={new Date(date).toISOString()}>{new Intl.DateTimeFormat('en-US', {
             year: 'numeric', month: 'long', day: 'numeric',
             timeZone: 'America/New_York'
-          }).format(new Date(post.date))}</time>
+          }).format(new Date(date))}</time>
         </div>
       </div>
     </header>

@@ -7,3 +7,10 @@
 - id: jim-sullivan
   name: Jim Sullivan
   pic: ./jim-sullivan.jpg
+
+- id: rob-wilson
+  name: Rob Wilson
+
+- id: jesse-craig
+  name: Jesse Craig
+  pic: ./jesse-craig.jpg

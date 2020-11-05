@@ -5,6 +5,9 @@ import { StaticQuery, graphql } from "gatsby"
 import GlobalStyles from './globalStyles'
 import MainHeader from "./mainHeader"
 import MainFooter from './mainFooter';
+import AlertBar from "./AlertBar";
+
+const showAlert = false;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -12,6 +15,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <GlobalStyles />
+        { showAlert && <AlertBar /> }
         <MainHeader />
         <main>{children}</main>
         <MainFooter socialMediaLinks={data.site.siteMetadata.socialMediaLinks} />

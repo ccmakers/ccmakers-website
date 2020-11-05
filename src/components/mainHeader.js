@@ -82,6 +82,10 @@ const style = css`
         color: rgba(#fff, .8);
         transition: color .4s ease, background-color .4s ease;
 
+        &.highlight {
+          background-color: #223F93;
+        }
+
         &:hover {
           color: #fff;
         }
@@ -116,12 +120,12 @@ const MainHeader = () => {
       </Link>
       <nav>
         <ul>
-          <li>
-            <Link to='/launchpad' activeClassName="active">LaunchPad</Link>
+          <li className="highlight">
+            <Link to='/covid-volunteers' activeClassName="active">COVID Volunteers</Link>
           </li>
 
           <li>
-            <Link to='/events' activeClassName="active">Events</Link>
+            <Link to='/launchpad' activeClassName="active">LaunchPad</Link>
           </li>
 
           <li>
@@ -133,6 +137,10 @@ const MainHeader = () => {
           </li>
 
           <li>
+            <Link to='/sponsor' activeClassName="active">Sponsors</Link>
+          </li>
+
+          <li>
             <Link to='/blog' activeClassName="active">Blog</Link>
           </li>
 
@@ -141,8 +149,9 @@ const MainHeader = () => {
           </li>
 
           <li>
-            <Link to='/contact' activeClassName="active">Contact</Link>
+            <Link to='/contact' activeClassName="active">Hours &amp; Location</Link>
           </li>
+
         </ul>
       </nav>
     </header>

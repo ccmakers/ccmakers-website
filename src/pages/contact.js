@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Container from "../components/container";
 import IntroPageHero from "../components/introPageHero";
 import { css } from '@emotion/core'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const style = css`
   display: flex;
@@ -56,32 +57,39 @@ const mapLink = `https://www.google.com/maps/place/204+Sisson+Rd,+Harwich,+MA+02
 
 const ContactPage = (props) => (
   <Layout>
-    <SEO title="Contact" keywords={[`contact`, `cape cod`, `makers`]} />
+    <SEO title="Hours &amp; Location" keywords={[`contact`, `cape cod`, `makers`]} />
     <IntroPageHero
-      title="Contact"
+      title="Hours &amp; Location"
     />
     <Container>
       <div css={style}>
         <div className="map">
-          <a href={mapLink} target="_blank" rel="noopener noreferrer">
+          <OutboundLink href={mapLink} target="_blank" rel="noopener noreferrer">
             <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-          </a>
+          </OutboundLink>
         </div>
         <div className="contact-content">
           <dl>
-            <dt>Address:</dt>
+            <dt>Mailing Address:</dt>
+            <dd>
+              Cape Cod Makers<br />
+              P.O. Box 266<br />
+              Marstons Mills, MA 02648
+            </dd>
+            <dt>MakerSpace Address:</dt>
             <dd>
               Harwich Cultural Center<br />
               204 Sisson Rd, Room 110<br />
               Harwich, MA 02645
             </dd>
-            <dt>Hours:</dt>
+            <dt>Hours:<sup>*</sup></dt>
             <dd>
               <strong>Tuesday</strong> 10am – 3pm<br />
-              <strong>Wednesday</strong> 7pm – 9pm<br />
-              <strong>Saturday</strong> 6pm – 9pm
+              <strong>Wednesday</strong> 7pm – 9pm (Project Time)<br />
+              <strong>Saturday</strong> 6pm – 9pm (Project Time)
             </dd>
-            <dt>Email:</dt>
+            <i><sup>*</sup>Members should check Slack for any changes in hours.</i><br />
+            <dt>Questions? Send an email to:</dt>
             <dd>
               <a href="mailto:info@capecodmakers.org">info@capecodmakers.org</a>
             </dd>

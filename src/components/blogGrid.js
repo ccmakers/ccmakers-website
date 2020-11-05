@@ -17,10 +17,24 @@ class BlogGrid extends Component {
     return (
       <Container>
         <div css={style}>
-          {entries.map(({node}) => (
-            <BlogCard key={node.frontmatter.slug}
-              {...node.frontmatter }
-            />
+          {entries.map(entry => (
+            entry.type === 'local'
+            ? <BlogCard
+                key={entry.node.frontmatter.slug}
+                uri={`/blog${entry.node.frontmatter.slug}`}
+                title={entry.node.frontmatter.title}
+                date={entry.node.frontmatter.date}
+                summary={entry.node.frontmatter.summary}
+                coverPicture={entry.node.frontmatter.coverPicture.childImageSharp.fixed.src}
+              />
+            : <BlogCard
+                key={entry.node.slug.current}
+                uri={`/blog/${entry.node.publishedAt}-${entry.node.slug.current}`}
+                title={entry.node.title}
+                date={entry.node.date}
+                summary={entry.node.excerpt}
+                coverPicture={entry.node.mainImage.asset.url}
+              />
           ))}
         </div>
       </Container>

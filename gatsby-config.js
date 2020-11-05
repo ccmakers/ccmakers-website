@@ -1,9 +1,11 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://capecodmakers.org`,
     title: 'Cape Cod Makers',
     description: '',
     author: 'ccmakers',
@@ -16,8 +18,10 @@ module.exports = {
     author: `@ccmakers`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-yaml`,
+    `gatsby-plugin-use-query-params`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -96,29 +100,45 @@ module.exports = {
         }
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-catch-links`,
     {
-      resolve: `gatsby-source-meetup`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // Learn about environment variables: https://gatsby.app/env-vars
-        // Your Meetup.com API key can be retrieved here: https://secure.meetup.com/fr-FR/meetup_api/key/
-        key: process.env.MEETUP_API_KEY,
-        fields: 'featured_photo',
-        // Mandatory: the URL name of a Meetup Group.
-        // See the URL of the group page, e.g. https://www.meetup.com/fr-FR/jamstack-paris
-        groupUrlName: "cape-cod-makers",
-        // Optional parameters for retrieving Events, see full documentation at
-        // https://www.meetup.com/meetup_api/docs/:urlname/events/?uri=%2Fmeetup_api%2Fdocs%2F%3Aurlname%2Fevents%2F#list
-        status: "upcoming",
-        desc: "false",
-        page: 100
+        trackingId: "UA-136958368-1",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        respectDNT: true
       },
+    },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
+        token: process.env.MY_SANITY_TOKEN,
+      },
+    },
+    {
+      resolve: 'gatsby-source-google-spreadsheets',
+      options: {
+        spreadsheetId: '1Jxz6rslfLS-aQDo-wt7jX8fZ8NjHerPy7o2bCgNc72M',
+        credentials: {
+          type: 'service_account',
+          project_id: process.env.G_PROJECT_ID,
+          private_key_id: process.env.G_PRIVATE_KEY_ID,
+          private_key: process.env.G_PRIVATE_KEY.replace(/(\\r)|(\\n)/g, '\n'),
+          client_email: process.env.G_CLIENT_EMAIL,
+          client_id: '',
+          auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+          token_uri: 'https://oauth2.googleapis.com/token',
+          auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+          client_x509_cert_url: `https://www.googleapis.com/robot/v1/metadata/x509/${process.env.G_PROJECT_ID}%40appspot.gserviceaccount.com`,
+        },
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
   mapping: {
     "MarkdownRemark.frontmatter.author": `AuthorsYaml.id`,

@@ -78,7 +78,7 @@ const style = css`
         padding: 1rem;
         background-color: #d7f2ff;
 
-        &:nth-child(even) {
+        &:nth-of-type(even) {
           background-color: #e8f7fe;
         }
       }
@@ -106,6 +106,7 @@ const style = css`
 `
 
 const PriceItem = ({
+  id,
   title,
   yearlyPrice,
   monthlyPrice,
@@ -131,8 +132,8 @@ const PriceItem = ({
         )}
         {benefits && benefits.length > 0 && (
           <ul>
-            {benefits.map( benefit => (
-              <li>{benefit}</li>
+            {benefits.map( (benefit, index) => (
+              <li key={`b-${index}`}>{benefit}</li>
             ))}
           </ul>
         )}

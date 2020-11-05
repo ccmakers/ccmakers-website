@@ -14,6 +14,12 @@ const MembershipPage = () => (
       title="Membership"
       introText="Want to get connected to our community and support our mission at the same time?<br><strong>Join the Cape Cod Makers today!</strong>"
     />
+    <Callout
+      id="become-a-member"
+      title="What are the benefits of joining?"
+      text="Membership in Cape Cod Makers opens you up to both the makerspace and a community of fellow makers eager to help you Create, Invent, and Discover! Join everyone during our bi-weekly project times or use the tools during any of the open hours."
+      link={<Link to="/contact">MakerSpace Hours &amp; Location</Link>}
+    />
     <PricingDeck>
       <PriceItem
         centered
@@ -21,20 +27,15 @@ const MembershipPage = () => (
         yearlyPrice={100}
         monthlyPrice={10}
         benefits={[
-          'Access to the LaunchPad when accompanied by a full-time member',
+          'Access to the LaunchPad MakerSpace during open hours',
+          'Unlimited access to all MakerSpace tools',
           'Full access to the Cape Cod Makers Slack group',
           'Early Access to Class & Event Registration',
           'Discounted Class & Event Fees',
         ]}
-        link={<a href="#become-a-member">How do I become a member?</a>}
+        link={<a href="https://forms.gle/17vxbiTRy9YjvcFG7">Apply for Membership!</a>}
       />
     </PricingDeck>
-    <Callout
-      id="become-a-member"
-      title="How do I become a member?"
-      text="If you're interested, please visit us during one of our monthly open house events. We will give you a tour, answer your questions, and introduce you to some of our members. If you decide to pursue a membership, we'll give you a membership application form to take home and fill out."
-      link={<Link to="/events">View Events</Link>}
-    />
   </Layout>
 )
 
