@@ -84,7 +84,6 @@ const ContactPage = (props) => (
             </dd>
             <dt>Hours:<sup>*</sup></dt>
             <dd>
-              <strong>Tuesday</strong> 10am – 3pm<br />
               <strong>Wednesday</strong> 7pm – 9pm (Project Time)<br />
               <strong>Saturday</strong> 6pm – 9pm (Project Time)
             </dd>
